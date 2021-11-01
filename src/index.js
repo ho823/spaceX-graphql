@@ -8,7 +8,7 @@ import { gql } from '@apollo/client';
 
 
 const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  uri: 'https://api.spacex.land/graphql/',
   cache: new InMemoryCache(),
   connectToDevTools: true,
 });
@@ -16,9 +16,17 @@ const client = new ApolloClient({
 client
   .query({
     query: gql`
-      query GetRates {
-        rates(currency: "USD") {
-          currency
+      query GetLaunch {
+        launches(limit: 5) {
+        launch_date_utc
+        launch_success
+        rocket {
+          rocket_name
+        }
+        details
+        links {
+          video_link
+          }
         }
       }
     `

@@ -1,11 +1,11 @@
 import './App.css';
-import ExchangeRates from './ExchangeRates';
+import Launches from './Launches';
 
 function App() {
   return (
     <div className="App">
-      <h2>My first Apollo app 🚀</h2>
-      <ExchangeRates/>
+      <h1>My first Apollo app 🚀</h1>
+      <Launches />
     </div>
   );
 }

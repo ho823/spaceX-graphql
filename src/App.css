@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  background-image: url('./images/space.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 109% 110%;
+  padding: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+h1 {
+  margin-bottom: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
